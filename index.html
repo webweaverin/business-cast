@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webweaver</title>
+    <meta name="description" content="Innovative business solutions to help you grow.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Web<span>Weaver</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#signup" class="btn btn-primary mobile-only">Sign Up</a>
+            </div>
+            <div class="nav-right">
+                <a href="#signup" class="btn btn-primary desktop-only">Sign Up</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text reveal-left">
+                <h1>Grow Your Business with <span class="typing-text"></span><span class="cursor">|</span></h1>
+                <p>We provide innovative strategies and digital solutions to help your business scale new heights.
+                    Expert team, proven results.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="counter" data-target="500">0</span>+
+                        <p>Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="counter" data-target="120">0</span>%
+                        <p>Growth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <!-- Using a placeholder illustration -->
+                <img src="https://placehold.co/600x400/6a11cb/ffffff?text=Business+Illustration"
+                    alt="Business Growth Illustration" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Background Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-padding">
+        <div class="container">
+            <div class="section-title reveal-bottom">
+                <h2>Why Choose Us</h2>
+                <p>We deliver excellence at every step of the journey.</p>
+            </div>
+            <div class="features-grid" id="features-container">
+                <!-- Features will be injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-content">
+            <div class="about-image reveal-left">
+                <img src="https://placehold.co/500x500/2575fc/ffffff?text=About+Our+Team" alt="About Us" loading="lazy">
+            </div>
+            <div class="about-text reveal-right">
+                <h2>About Our Company</h2>
+                <p>Founded in 2020, BizGrow has helped hundreds of companies streamline their operations and boost their
+                    digital presence.</p>
+                <p>Our mission is simple: to empower businesses with the tools and strategies they need to succeed in a
+                    digital-first world.</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Experienced Professionals</li>
+                    <li><i class="fas fa-check-circle"></i> Data-Driven Strategies</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Dedicated Support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container">
+            <div class="section-title reveal-bottom">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions tailored to your needs.</p>
+            </div>
+            <div class="services-grid" id="services-container">
+                <!-- Services will be injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-title reveal-bottom">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your project? Send us a message.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Business Avenue, Tech City, USA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@bizgrow.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Web<span>Weaver</span></h3>
+                <p>Empowering businesses with innovative solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BizGrow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
